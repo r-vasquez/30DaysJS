@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Virtual Drumkit</title>
+  </head>
+  <body>
+    <!-- Creating Div of Keys with their data-key binded to its KeyCode -->
+    <div class="keys">
+      <div data-key="65" class="key">
+        <kbd>A</kbd>
+        <span>Kick</span>
+      </div>
+      <br />
+      <div data-key="83" class="key">
+        <kbd>S</kbd>
+        <span>Hi-Hat</span>
+      </div>
+      <br />
+      <div data-key="68" class="key">
+        <kbd>D</kbd>
+        <span>Snare</span>
+      </div>
+    </div>
+
+    <!-- Linking the audio file with data-key -->
+    <audio data-key="65" src="sounds/kick.wav"></audio>
+    <audio data-key="83" src="sounds/hihat.wav"></audio>
+    <audio data-key="68" src="sounds/snare1.wav"></audio>
+
+    <p>Sounds thanks to <a href="https://sampleswap.org">Sampleswap.org</a></p>
+
+    <script src="index.js"></script>
+  </body>
+</html>
