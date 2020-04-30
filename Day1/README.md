@@ -8,4 +8,4 @@ Played with the styles and shadows to add 3 neumorphic buttons:
 
 It doesn't look like a drumset but it sounds like one. :laughing:
 
-> Sounds samples thanks to Sampleswap.org
+> Sound samples thanks to Sampleswap.org
