@@ -1,0 +1,40 @@
+body {
+  background-color: #222831;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin: 0em;
+}
+
+html {
+  height: 100%;
+}
+.clock {
+  height: 30rem;
+  width: 30rem;
+  border-radius: 50%;
+  border: 10px solid white;
+  padding: 20px;
+}
+
+.clock-face {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  transform: translateY(-3px);
+}
+
+.hand {
+  border: 1px solid #af0404;
+  background-color: #af0404;
+  height: 6px;
+  width: 15rem;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%; /* changing origin of rotation axis */
+  transform: rotate(90deg);
+  transition: all 0.07s;
+  transition-timing-function: cubic-bezier(0.29, 1.98, 0.68, 0.99);
+  /* to look like a real clock bouncing back */
+}
