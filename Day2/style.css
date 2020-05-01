@@ -34,6 +34,9 @@ html {
   top: 50%;
   transform-origin: 100%; /* changing origin of rotation axis */
   transform: rotate(90deg);
+}
+
+.transition {
   transition: all 0.07s;
   transition-timing-function: cubic-bezier(0.29, 1.98, 0.68, 0.99);
   /* to look like a real clock bouncing back */
