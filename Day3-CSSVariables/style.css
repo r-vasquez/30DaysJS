@@ -1,0 +1,26 @@
+:root {
+  --base: #f7df1e;
+  --blur: 10px;
+  --spacing: 10px;
+}
+
+body {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Geneva', 'Tahoma', 'Verdana', sans-serif;
+}
+
+.hl {
+  color: var(--base);
+}
+
+.resImg {
+  width: 500px;
+  height: auto;
+  padding: var(--spacing);
+  background-color: var(--base);
+  filter: blur(var(--blur));
+}
+.controls {
+  margin-bottom: 30px;
+}
