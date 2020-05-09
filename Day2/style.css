@@ -16,24 +16,47 @@ html {
   border-radius: 50%;
   border: 10px solid white;
   padding: 20px;
-}
-
-.clock-face {
-  height: 100%;
-  width: 100%;
   position: relative;
-  transform: translateY(-3px);
+  box-shadow: inset 0 0 20px #000000;
 }
 
-.hand {
-  border: 1px solid #af0404;
-  background-color: #af0404;
-  height: 6px;
-  width: 15rem;
+.hour-hand {
+  background: white;
+  width: 4px;
+  height: 10rem;
   position: absolute;
-  top: 50%;
-  transform-origin: 100%; /* changing origin of rotation axis */
-  transform: rotate(90deg);
+  right: 50%;
+  margin-top: 5rem;
+  transform-origin: bottom;
+}
+
+.min-hand {
+  background: white;
+  width: 4px;
+  height: 13rem;
+  position: absolute;
+  right: 50%;
+  margin-top: 2rem;
+  transform-origin: bottom;
+}
+
+.second-hand {
+  background: red;
+  width: 3px;
+  height: 15rem;
+  position: absolute;
+  right: 50%;
+  transform-origin: bottom;
+}
+
+.point {
+  background: red;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  position: absolute;
+  top: 49%;
+  right: 49%;
 }
 
 .transition {
