@@ -9,6 +9,8 @@ function setDate() {
   const seconds = now.getSeconds()
   const secondsDegrees = (seconds / 60) * 360 // Turning the second into a degree and adding the 90 deg offset
   secondHand.style.transform = `rotate(${secondsDegrees}deg)`
+
+  // Use this to remove the transition class when it changes a minute.
   if (seconds === 59 || seconds === 0) {
     secondHand.classList.remove('transition')
   } else {
@@ -18,6 +20,8 @@ function setDate() {
   const mins = now.getMinutes()
   const minsDegree = (mins / 60) * 360
   minHand.style.transform = `rotate(${minsDegree}deg)`
+
+  // Use this to remove the transition class when it changes a hour.
   if (mins === 59 || mins === 0) {
     minHand.classList.remove('transition')
   } else {
